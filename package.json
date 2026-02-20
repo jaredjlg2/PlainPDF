@@ -1,0 +1,15 @@
+{
+  "name": "plainpdf",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/app"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/app run dev",
+    "build": "npm --workspace apps/app run build",
+    "test": "npm --workspace apps/app run test",
+    "test:run": "npm --workspace apps/app run test:run",
+    "lint": "npm --workspace apps/app run lint"
+  }
+}
