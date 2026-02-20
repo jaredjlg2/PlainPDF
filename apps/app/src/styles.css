@@ -1,0 +1,17 @@
+body { margin: 0; font-family: Inter, Arial, sans-serif; }
+.app { height: 100vh; display: flex; flex-direction: column; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; border-bottom: 1px solid #ddd; background: #fafafa; }
+.tools { display: flex; gap: 4px; flex-wrap: wrap; }
+button.active { background: #1f66ff; color: white; }
+.workspace { display: flex; flex: 1; min-height: 0; }
+.sidebar { width: 180px; border-right: 1px solid #ddd; overflow: hidden; }
+.thumb { padding: 6px; cursor: pointer; display: flex; flex-direction: column; align-items: center; }
+.thumb.selected { background: #e9f0ff; }
+.thumb img { width: 120px; border: 1px solid #ddd; }
+.thumb-placeholder { width: 120px; height: 160px; border: 1px dashed #bbb; display: grid; place-items: center; font-size: 12px; }
+.main-pane { flex: 1; overflow: auto; display: flex; flex-direction: column; align-items: center; }
+.zoom-row { position: sticky; top: 0; z-index: 3; background: white; display: flex; gap: 8px; padding: 8px; border-bottom: 1px solid #eee; width: 100%; justify-content: center; }
+.viewer { position: relative; margin: 16px 0; }
+.viewer canvas { display: block; }
+.viewer .overlay { position: absolute; top: 0; left: 0; }
+.empty { display: grid; place-items: center; flex: 1; color: #666; }
